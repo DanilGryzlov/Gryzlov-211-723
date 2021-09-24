@@ -1,0 +1,66 @@
+using System;
+
+namespace zadaniye_4
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            
+            
+            Console.WriteLine("Найдем площадь  и периметр прямоугольника \nВведите значение стороны а");
+            double a = Convert.ToDouble( Console.ReadLine());
+            Console.WriteLine("Введите значение В");
+            double b = Convert.ToDouble(Console.ReadLine());
+            double s = a * b;
+            double p = (a + b) * 2;
+            Console.WriteLine($"Площадь равна = {s}");
+            Console.WriteLine($"Периметр равен = {p}");
+            Console.WriteLine("Найдем длину окружности, введите диаметр");
+            double d = Convert.ToDouble(Console.ReadLine());
+            double l = d * 3.14;
+            Console.WriteLine($"Длина окружности равна = {l}");
+            Console.WriteLine("Найдем среднее арифметическое двух чисел \nВведите А");
+            double a1 = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Введите значение В");
+            double b1 = Convert.ToDouble(Console.ReadLine());
+            double sr = (a1 + b1) / 2;
+            Console.WriteLine($"Среднее этих чисел = {sr}");
+            Console.WriteLine("Найдем сумму, разность, произведение и частное квадратов двух чисел\nВведите значение А");
+            double a2 = Convert.ToDouble(Console.ReadLine());
+            while (a2 ==0)
+            {
+                Console.WriteLine("Введите значение A");
+                a2 = Convert.ToDouble(Console.ReadLine());
+            }
+            double A = a2 * a2;
+            Console.WriteLine("Введите значение B");
+            double b2 = Convert.ToDouble(Console.ReadLine());
+            while (b2 == 0)
+            {
+                Console.WriteLine("Введите значение A");
+                b2 = Convert.ToDouble(Console.ReadLine());
+            }
+            double B = b2 * b2;
+            Console.WriteLine("Сумма = {0}, Разность = {1},  Произведение = {2} и частное крвадратов = {3}", A+B, A-B, A*B, A/B);
+            Console.WriteLine("Найдем сумму, разность, произведение и частное модулей двух чисел\nВведите значение А");
+            double a3 = Convert.ToDouble(Console.ReadLine());
+            while (a2 == 0)
+            {
+                Console.WriteLine("Было введено нулевое значение. \nВведите значение A");
+                a3 = Convert.ToDouble(Console.ReadLine());
+            }
+            double A1 = Math.Abs(a3);
+            Console.WriteLine("Введите значение B");
+            double b3 = Convert.ToDouble(Console.ReadLine());
+            while (b3 == 0)
+            {
+                Console.WriteLine("Было введено нулевое значение. \nВведите значение B");
+                b3 = Convert.ToDouble(Console.ReadLine());
+            }
+            double B1 = Math.Abs(b3);
+            Console.WriteLine("Сумма = {0}, Разность = {1},  Произведение = {2} и частное крвадратов = {3}", A1 + B1, A1 - B1, A1 * B1, A1 / B1);
+        }
+
+    }
+}
